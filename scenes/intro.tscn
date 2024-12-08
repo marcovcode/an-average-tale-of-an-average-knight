@@ -1,14 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://bbn8gtyuub4r"]
+[gd_scene load_steps=2 format=3 uid="uid://bbn8gtyuub4r"]
 
 [ext_resource type="Script" path="res://scripts/intro.gd" id="1_tfyv8"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8jt33"]
-bg_color = Color(0, 0, 0, 1)
 
 [node name="Intro" type="Node2D"]
 script = ExtResource("1_tfyv8")
 
-[node name="Panel" type="Panel" parent="."]
+[node name="ColorRect" type="ColorRect" parent="."]
 offset_right = 320.0
 offset_bottom = 240.0
-theme_override_styles/panel = SubResource("StyleBoxFlat_8jt33")
+color = Color(0, 0, 0, 1)
