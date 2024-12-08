@@ -27,7 +27,7 @@ directories/dtl_directory={
 }
 variables={}
 glossary/default_case_sensitive=true
-text/letter_speed=0.01
+text/letter_speed=0.025
 choices/autofocus_first=true
 choices/delay=0.2
 choices/reveal_delay=0
