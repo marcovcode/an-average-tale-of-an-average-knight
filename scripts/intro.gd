@@ -5,5 +5,8 @@ func _ready() -> void:
     Dialogic.start("intro")
 
 func _on_dialogic_signal(argument: String) -> void:
-    if argument == "disable_user_input":
-        Dialogic.Inputs.block_input(9999)
+    match argument:
+        "disable_user_input":
+            Dialogic.Inputs.block_input(9999)
+        "go_to_town":
+            get_tree().change_scene_to_file("res://scenes/town.tscn")
