@@ -4,6 +4,7 @@ signal on_transition_finished
 
 @onready var panel = $Panel
 @onready var animation_player = $AnimationPlayer
+@onready var timer = $Timer # Make sure to add a Timer node as a child of this CanvasLayer
 
 func _ready() -> void:
 	panel.visible = false
@@ -12,6 +13,8 @@ func _ready() -> void:
 func _on_animation_finished(animation_name: String):
 	if animation_name == "fade_in":
 		on_transition_finished.emit()
+		timer.start(1.0)
+		await timer.timeout
 		animation_player.play("fade_out")
 	elif animation_name == "fade_out":
 		panel.visible = false
