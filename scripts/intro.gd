@@ -8,7 +8,7 @@ func _on_dialogic_signal(argument: String) -> void:
     match argument:
         "disable_user_input":
             Dialogic.Inputs.block_input(9999)
-        "go_to_town_center":
+        "go_to_witch_house":
             Transition.transition()
             await Transition.on_transition_finished
-            get_tree().change_scene_to_file("res://scenes/town_center.tscn")
+            get_tree().change_scene_to_file("res://scenes/witch_house.tscn")

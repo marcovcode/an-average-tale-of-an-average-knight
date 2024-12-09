@@ -4,7 +4,7 @@ signal on_transition_finished
 
 @onready var panel = $Panel
 @onready var animation_player = $AnimationPlayer
-@onready var timer = $Timer # Make sure to add a Timer node as a child of this CanvasLayer
+@onready var timer = $Timer
 
 func _ready() -> void:
 	panel.visible = false

@@ -1,25 +1,25 @@
 [gd_scene load_steps=24 format=4 uid="uid://dew1u85x7q0kb"]
 
-[ext_resource type="Texture2D" uid="uid://dnfc077j7k72f" path="res://assets/sprites/Tiles/Grass_Middle.png" id="1_4b6ov"]
-[ext_resource type="PackedScene" uid="uid://bewxvx03tk5ad" path="res://scenes/sign.tscn" id="1_x6lfv"]
-[ext_resource type="Texture2D" uid="uid://3ktf6dlcbowl" path="res://assets/sprites/Tiles/Path_Middle.png" id="2_3wmkc"]
-[ext_resource type="Texture2D" uid="uid://6om6xkl5437x" path="res://assets/sprites/Tiles/Path_Tile.png" id="3_6jx57"]
-[ext_resource type="Texture2D" uid="uid://ltejqggx4vm8" path="res://assets/sprites/Tiles/Water_Tile.png" id="4_yhy60"]
-[ext_resource type="Texture2D" uid="uid://6q55rlpnkhmq" path="res://assets/sprites/Outdoor decoration/Outdoor_Decor_Free.png" id="5_oog7w"]
-[ext_resource type="Texture2D" uid="uid://o2n2mxyr7ja2" path="res://assets/sprites/Outdoor decoration/Oak_Tree_Small.png" id="6_euu4n"]
-[ext_resource type="Texture2D" uid="uid://c2auwktlkkmc0" path="res://assets/sprites/Outdoor decoration/Fences.png" id="7_vp4pe"]
-[ext_resource type="Texture2D" uid="uid://043wkwui03g8" path="res://assets/sprites/Outdoor decoration/House.png" id="8_fqgp8"]
+[ext_resource type="Texture2D" uid="uid://dnfc077j7k72f" path="res://assets/sprites/Tiles/Grass_Middle.png" id="1_031u3"]
+[ext_resource type="Texture2D" uid="uid://3ktf6dlcbowl" path="res://assets/sprites/Tiles/Path_Middle.png" id="2_3lkof"]
+[ext_resource type="Texture2D" uid="uid://6om6xkl5437x" path="res://assets/sprites/Tiles/Path_Tile.png" id="3_1mkvu"]
+[ext_resource type="Texture2D" uid="uid://ltejqggx4vm8" path="res://assets/sprites/Tiles/Water_Tile.png" id="4_a4kqj"]
+[ext_resource type="Texture2D" uid="uid://6q55rlpnkhmq" path="res://assets/sprites/Outdoor decoration/Outdoor_Decor_Free.png" id="5_xbinw"]
+[ext_resource type="Texture2D" uid="uid://o2n2mxyr7ja2" path="res://assets/sprites/Outdoor decoration/Oak_Tree_Small.png" id="6_ws1qk"]
+[ext_resource type="Texture2D" uid="uid://c2auwktlkkmc0" path="res://assets/sprites/Outdoor decoration/Fences.png" id="7_6620r"]
+[ext_resource type="Texture2D" uid="uid://043wkwui03g8" path="res://assets/sprites/Outdoor decoration/House.png" id="8_j3tjb"]
+[ext_resource type="PackedScene" uid="uid://bewxvx03tk5ad" path="res://scenes/sign.tscn" id="9_dh5w8"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cx2h6"]
-texture = ExtResource("1_4b6ov")
+texture = ExtResource("1_031u3")
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8wqic"]
-texture = ExtResource("2_3wmkc")
+texture = ExtResource("2_3lkof")
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_l4u0s"]
-texture = ExtResource("3_6jx57")
+texture = ExtResource("3_1mkvu")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -38,7 +38,7 @@ texture = ExtResource("3_6jx57")
 2:5/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qerd4"]
-texture = ExtResource("4_yhy60")
+texture = ExtResource("4_a4kqj")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -63,7 +63,7 @@ sources/6 = SubResource("TileSetAtlasSource_l4u0s")
 sources/8 = SubResource("TileSetAtlasSource_qerd4")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vajyi"]
-texture = ExtResource("5_oog7w")
+texture = ExtResource("5_xbinw")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -128,7 +128,7 @@ texture = ExtResource("5_oog7w")
 sources/0 = SubResource("TileSetAtlasSource_vajyi")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7w0ii"]
-texture = ExtResource("6_euu4n")
+texture = ExtResource("6_ws1qk")
 2:0/size_in_atlas = Vector2i(2, 2)
 2:0/0 = 0
 
@@ -136,7 +136,7 @@ texture = ExtResource("6_euu4n")
 sources/0 = SubResource("TileSetAtlasSource_7w0ii")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wx7tt"]
-texture = ExtResource("7_vp4pe")
+texture = ExtResource("7_6620r")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -155,7 +155,7 @@ texture = ExtResource("7_vp4pe")
 3:3/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pr06l"]
-texture = ExtResource("8_fqgp8")
+texture = ExtResource("8_j3tjb")
 0:0/size_in_atlas = Vector2i(5, 7)
 0:0/0 = 0
 
@@ -164,14 +164,14 @@ sources/0 = SubResource("TileSetAtlasSource_wx7tt")
 sources/1 = SubResource("TileSetAtlasSource_pr06l")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lw8dc"]
-texture = ExtResource("8_fqgp8")
+texture = ExtResource("8_j3tjb")
 0:0/size_in_atlas = Vector2i(5, 7)
 0:0/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_pspjf"]
 sources/0 = SubResource("TileSetAtlasSource_lw8dc")
 
-[node name="TownCenter" type="Node2D"]
+[node name="WitchHouse" type="Node2D"]
 
 [node name="Environment" type="Node" parent="."]
 
@@ -208,5 +208,5 @@ tile_map_data = PackedByteArray("AAAMAAAAAAAAAAAAAAA=")
 tile_set = SubResource("TileSet_pspjf")
 metadata/_edit_lock_ = true
 
-[node name="Sign" parent="." instance=ExtResource("1_x6lfv")]
+[node name="Sign" parent="." instance=ExtResource("9_dh5w8")]
 position = Vector2(203, 47)
