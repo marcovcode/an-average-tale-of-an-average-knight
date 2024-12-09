@@ -22,9 +22,12 @@ Transition="*res://scenes/transition.tscn"
 
 [dialogic]
 
-directories/dch_directory={}
+directories/dch_directory={
+"sir_aldric_ravenshield": "res://characters/sir_aldric_ravenshield.dch"
+}
 directories/dtl_directory={
-"intro": "res://timelines/intro.dtl"
+"intro": "res://timelines/intro.dtl",
+"player_should_go_to_witch": "res://timelines/player_should_go_to_witch.dtl"
 }
 variables={}
 glossary/default_case_sensitive=true
@@ -48,7 +51,7 @@ animations/join_default_wait=true
 animations/leave_default_length=0.5
 animations/leave_default_wait=true
 animations/cross_fade_default_length=0.5
-layout/style_list=["res://styles/full_screen.tres"]
+layout/style_list=["res://styles/full_screen.tres", "res://styles/default.tres"]
 layout/default_style="res://styles/full_screen.tres"
 
 [display]
