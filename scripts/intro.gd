@@ -7,7 +7,9 @@ func _ready() -> void:
 func _on_dialogic_signal(argument: String) -> void:
     match argument:
         "disable_user_input":
-            Dialogic.Inputs.block_input(9999)
+            Dialogic.Inputs.set_block_signals(true)
+        "enable_user_input":
+            Dialogic.Inputs.set_block_signals(false)
         "go_to_witch_house":
             Transition.transition()
             await Transition.on_transition_finished

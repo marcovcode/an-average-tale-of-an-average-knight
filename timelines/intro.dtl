@@ -3,4 +3,5 @@
 [aa]Sir Aldric Ravenshield was a young knight, unknown to the king, but eager to prove his worth.
 [aa]When the princess fell gravely ill, and no healer could save her, the king issued a desperate call for help.
 [aa]Hearing the plea, Aldric saw his chance to earn glory and stepped forward to accept the challenge...
+[signal arg="enable_user_input"]
 [signal arg="go_to_witch_house"]
