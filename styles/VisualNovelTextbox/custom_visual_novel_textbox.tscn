@@ -276,6 +276,7 @@ metadata/_edit_layout_mode = 1
 [node name="DialogicNode_DialogText" type="RichTextLabel" parent="Anchor/AnimationParent/Sizer/DialogTextPanel" node_paths=PackedStringArray("textbox_root")]
 unique_name_in_owner = true
 layout_mode = 2
+size_flags_vertical = 4
 mouse_filter = 1
 theme_override_colors/default_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/bold_italics_font_size = 15
@@ -284,6 +285,7 @@ theme_override_font_sizes/normal_font_size = 15
 theme_override_font_sizes/bold_font_size = 15
 bbcode_enabled = true
 text = "Some default text"
+fit_content = true
 visible_characters_behavior = 1
 script = ExtResource("3_4634k")
 textbox_root = NodePath("..")
