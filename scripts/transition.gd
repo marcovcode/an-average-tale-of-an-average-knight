@@ -12,9 +12,9 @@ func _ready() -> void:
 
 func _on_animation_finished(animation_name: String):
 	if animation_name == "fade_in":
-		on_transition_finished.emit()
 		timer.start(1.0)
 		await timer.timeout
+		on_transition_finished.emit()
 		animation_player.play("fade_out")
 	elif animation_name == "fade_out":
 		panel.visible = false
