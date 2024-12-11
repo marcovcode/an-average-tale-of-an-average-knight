@@ -1,26 +1,26 @@
 [gd_scene load_steps=25 format=4 uid="uid://dew1u85x7q0kb"]
 
-[ext_resource type="Texture2D" uid="uid://dnfc077j7k72f" path="res://assets/sprites/Tiles/Grass_Middle.png" id="1_031u3"]
-[ext_resource type="Texture2D" uid="uid://3ktf6dlcbowl" path="res://assets/sprites/Tiles/Path_Middle.png" id="2_3lkof"]
-[ext_resource type="Texture2D" uid="uid://6om6xkl5437x" path="res://assets/sprites/Tiles/Path_Tile.png" id="3_1mkvu"]
-[ext_resource type="Texture2D" uid="uid://ltejqggx4vm8" path="res://assets/sprites/Tiles/Water_Tile.png" id="4_a4kqj"]
-[ext_resource type="Texture2D" uid="uid://6q55rlpnkhmq" path="res://assets/sprites/Outdoor decoration/Outdoor_Decor_Free.png" id="5_xbinw"]
-[ext_resource type="Texture2D" uid="uid://o2n2mxyr7ja2" path="res://assets/sprites/Outdoor decoration/Oak_Tree_Small.png" id="6_ws1qk"]
-[ext_resource type="Texture2D" uid="uid://c2auwktlkkmc0" path="res://assets/sprites/Outdoor decoration/Fences.png" id="7_6620r"]
-[ext_resource type="Texture2D" uid="uid://043wkwui03g8" path="res://assets/sprites/Outdoor decoration/House.png" id="8_j3tjb"]
-[ext_resource type="PackedScene" uid="uid://bewxvx03tk5ad" path="res://scenes/sign.tscn" id="9_dh5w8"]
-[ext_resource type="PackedScene" uid="uid://b2xhuuwg0rhgm" path="res://scenes/player.tscn" id="10_qd1le"]
+[ext_resource type="Texture2D" uid="uid://dnfc077j7k72f" path="res://assets/sprites/Tiles/Grass_Middle.png" id="1_v2n57"]
+[ext_resource type="Texture2D" uid="uid://3ktf6dlcbowl" path="res://assets/sprites/Tiles/Path_Middle.png" id="2_usv34"]
+[ext_resource type="Texture2D" uid="uid://6om6xkl5437x" path="res://assets/sprites/Tiles/Path_Tile.png" id="3_2vo7e"]
+[ext_resource type="Texture2D" uid="uid://ltejqggx4vm8" path="res://assets/sprites/Tiles/Water_Tile.png" id="4_kvqlm"]
+[ext_resource type="Texture2D" uid="uid://6q55rlpnkhmq" path="res://assets/sprites/Outdoor decoration/Outdoor_Decor_Free.png" id="5_0map2"]
+[ext_resource type="Texture2D" uid="uid://o2n2mxyr7ja2" path="res://assets/sprites/Outdoor decoration/Oak_Tree_Small.png" id="6_mqwrj"]
+[ext_resource type="Texture2D" uid="uid://c2auwktlkkmc0" path="res://assets/sprites/Outdoor decoration/Fences.png" id="7_7g41w"]
+[ext_resource type="Texture2D" uid="uid://043wkwui03g8" path="res://assets/sprites/Outdoor decoration/House.png" id="8_3m76a"]
+[ext_resource type="PackedScene" uid="uid://bewxvx03tk5ad" path="res://scenes/sign.tscn" id="9_82kuh"]
+[ext_resource type="PackedScene" uid="uid://b2xhuuwg0rhgm" path="res://scenes/player.tscn" id="10_71kci"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cx2h6"]
-texture = ExtResource("1_031u3")
+texture = ExtResource("1_v2n57")
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8wqic"]
-texture = ExtResource("2_3lkof")
+texture = ExtResource("2_usv34")
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_l4u0s"]
-texture = ExtResource("3_1mkvu")
+texture = ExtResource("3_2vo7e")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -39,7 +39,7 @@ texture = ExtResource("3_1mkvu")
 2:5/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qerd4"]
-texture = ExtResource("4_a4kqj")
+texture = ExtResource("4_kvqlm")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:0/0 = 0
@@ -81,7 +81,7 @@ sources/6 = SubResource("TileSetAtlasSource_l4u0s")
 sources/8 = SubResource("TileSetAtlasSource_qerd4")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vajyi"]
-texture = ExtResource("5_xbinw")
+texture = ExtResource("5_0map2")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -146,7 +146,7 @@ texture = ExtResource("5_xbinw")
 sources/0 = SubResource("TileSetAtlasSource_vajyi")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7w0ii"]
-texture = ExtResource("6_ws1qk")
+texture = ExtResource("6_mqwrj")
 2:0/size_in_atlas = Vector2i(2, 2)
 2:0/0 = 0
 2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-10.0763, 5.03814, 11.1369, 5.21491, 11.1369, 16.3518, -9.63433, 16.2635)
@@ -156,7 +156,7 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_7w0ii")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wx7tt"]
-texture = ExtResource("7_6620r")
+texture = ExtResource("7_7g41w")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:0/0 = 0
@@ -191,7 +191,7 @@ texture = ExtResource("7_6620r")
 3:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pr06l"]
-texture = ExtResource("8_j3tjb")
+texture = ExtResource("8_3m76a")
 0:0/size_in_atlas = Vector2i(5, 7)
 0:0/0 = 0
 
@@ -201,7 +201,7 @@ sources/0 = SubResource("TileSetAtlasSource_wx7tt")
 sources/1 = SubResource("TileSetAtlasSource_pr06l")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lw8dc"]
-texture = ExtResource("8_j3tjb")
+texture = ExtResource("8_3m76a")
 0:0/size_in_atlas = Vector2i(5, 7)
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-33.9411, -6.71752, 33.2782, -7.20365, 31.7756, 50.2488, -33.9853, 50.2488)
@@ -210,7 +210,7 @@ texture = ExtResource("8_j3tjb")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_lw8dc")
 
-[node name="WitchHouse" type="Node2D"]
+[node name="Town" type="Node2D"]
 y_sort_enabled = true
 
 [node name="Environment" type="Node2D" parent="."]
@@ -222,7 +222,7 @@ tile_map_data = PackedByteArray("AAAAAAAAAQAAAAAAAAAAAAIAAQAAAAAAAAAAAAMAAQAAAAA
 tile_set = SubResource("TileSet_qoed8")
 metadata/_edit_lock_ = true
 
-[node name="Flora" type="TileMapLayer" parent="Environment"]
+[node name="Decorations" type="TileMapLayer" parent="Environment"]
 position = Vector2(5, 0)
 tile_map_data = PackedByteArray("AAAFAAQAAAAAAAEAAAAFAAUAAAABAAIAAAAGAAEAAAACAAEAAAAGAAMAAAABAAAAAAAGAAQAAAACAAAAAAAHAAIAAAAAAAEAAAAHAAMAAAABAAAAAAAHAAUAAAACAAAAAAAIAAUAAAAAAAAAAAAJAAIAAAABAAAAAAAJAAMAAAABAAEAAAAOAAIAAAACAAIAAAAOAAMAAAACAAAAAAAQAAEAAAAAAAAAAAAQAAIAAAACAAEAAAAQAAQAAAAAAAEAAAARAAEAAAACAAEAAAARAAMAAAAAAAEAAAARAAQAAAAAAAEAAAASAAMAAAABAAAAAAASAAUAAAABAAEAAAATAAEAAAACAAIAAAATAAIAAAAAAAAAAAATAAQAAAAAAAAAAAAOAAwAAAACAAAAAAAPAAwAAAAAAAAAAAAPAA0AAAAAAAAAAAARAAoAAAACAAAAAAARAAwAAAACAAAAAAASAAkAAAABAAEAAAASAAoAAAAAAAEAAAASAAwAAAAAAAEAAAASAA0AAAABAAIAAAATAAkAAAAAAAEAAAATAAwAAAABAAAAAAATAA0AAAAAAAEAAAAPAA4AAAABAAAAAAASAA4AAAABAAAAAAAHAAQAAAACAAAAAAAFAAIAAAABAAAAAAA=")
 tile_set = SubResource("TileSet_qjabt")
@@ -247,11 +247,11 @@ tile_map_data = PackedByteArray("AAAMAAAAAAAAAAAAAAA=")
 tile_set = SubResource("TileSet_pspjf")
 metadata/_edit_lock_ = true
 
-[node name="Sign" parent="Environment" instance=ExtResource("9_dh5w8")]
+[node name="Sign" parent="Environment" instance=ExtResource("9_82kuh")]
 y_sort_enabled = true
 position = Vector2(203, 47)
 
-[node name="Player" parent="." instance=ExtResource("10_qd1le")]
+[node name="Player" parent="." instance=ExtResource("10_71kci")]
 position = Vector2(211, 127)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
