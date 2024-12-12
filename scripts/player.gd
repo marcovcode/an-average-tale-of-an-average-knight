@@ -5,6 +5,7 @@ var can_move = true
 var last_direction = "down"
 
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
+@onready var raycast: RayCast2D = $RayCast2D
 
 var is_moving = false
 
@@ -52,6 +53,11 @@ func animate(input_direction):
 		elif last_direction == "up":
 			animated_sprite.play("idle_up")
 
+func change_raycast_direction(input_direction):
+	if is_moving:
+		var input_angle = atan2(-input_direction.x, input_direction.y)
+		raycast.global_rotation = input_angle
+
 func _on_dialogic_signal(argument: String) -> void:
 	match argument:
 		"disable_player_movement":
@@ -66,4 +72,5 @@ func _ready() -> void:
 func _physics_process(delta):
 	var input_direction = get_input()
 	animate(input_direction)
+	change_raycast_direction(input_direction)
 	move_and_slide()

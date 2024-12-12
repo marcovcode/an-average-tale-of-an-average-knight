@@ -244,6 +244,7 @@ metadata/_edit_lock_ = true
 [node name="Sign" parent="Environment" instance=ExtResource("9_82kuh")]
 y_sort_enabled = true
 position = Vector2(203, 47)
+metadata/_edit_lock_ = true
 
 [node name="Player" parent="." instance=ExtResource("10_71kci")]
 position = Vector2(199, 116)
