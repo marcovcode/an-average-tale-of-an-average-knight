@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://bewxvx03tk5ad"]
+[gd_scene load_steps=6 format=3 uid="uid://bewxvx03tk5ad"]
 
 [ext_resource type="Texture2D" uid="uid://6q55rlpnkhmq" path="res://assets/sprites/Outdoor decoration/Outdoor_Decor_Free.png" id="1_bdah5"]
+[ext_resource type="Script" path="res://scripts/sign.gd" id="1_d76p3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_o4t4j"]
 texture = ExtResource("1_bdah5")
@@ -72,6 +73,7 @@ sources/0 = SubResource("TileSetAtlasSource_o4t4j")
 size = Vector2(14, 8)
 
 [node name="Sign" type="Area2D"]
+script = ExtResource("1_d76p3")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 3, 0, 0, 0)
