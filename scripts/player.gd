@@ -3,11 +3,16 @@ extends CharacterBody2D
 const SPEED = 80
 var can_move = true
 var last_direction = "down"
+var is_moving = false
 
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
 @onready var raycast: RayCast2D = $RayCast2D
 
-var is_moving = false
+func _on_timeline_started():
+	can_move = false
+
+func _on_timeline_ended():
+	can_move = true
 
 func get_input():
 	var input_direction = Input.get_vector("left", "right", "up", "down")
@@ -58,15 +63,9 @@ func change_raycast_direction(input_direction):
 		var input_angle = atan2(-input_direction.x, input_direction.y)
 		raycast.global_rotation = input_angle
 
-func _on_dialogic_signal(argument: String) -> void:
-	match argument:
-		"disable_player_movement":
-			can_move = false
-		"enable_player_movement":
-			can_move = true
-
 func _ready() -> void:
-	Dialogic.signal_event.connect(_on_dialogic_signal)
+	Dialogic.timeline_started.connect(_on_timeline_started)
+	Dialogic.timeline_ended.connect(_on_timeline_ended)
 	Dialogic.start("player_should_go_to_witch")
 
 func _physics_process(delta):

@@ -1,16 +1,16 @@
 extends Node2D
 
 func _ready() -> void:
-    Dialogic.signal_event.connect(_on_dialogic_signal)
+    Dialogic.timeline_started.connect(_on_timeline_started)
+    Dialogic.timeline_ended.connect(_on_timeline_ended)
     Dialogic.start("intro")
 
-func _on_dialogic_signal(argument: String) -> void:
-    match argument:
-        "disable_user_input":
-            Dialogic.Inputs.set_block_signals(true)
-        "enable_user_input":
-            Dialogic.Inputs.set_block_signals(false)
-        "go_to_town":
-            Transition.transition()
-            await Transition.on_transition_finished
-            get_tree().change_scene_to_file("res://scenes/town.tscn")
+func _on_timeline_started():
+    Dialogic.Inputs.set_block_signals(true)
+
+func _on_timeline_ended():
+    Dialogic.Inputs.set_block_signals(false)
+
+    Transition.transition()
+    await Transition.on_transition_finished
+    get_tree().change_scene_to_file("res://scenes/town.tscn")

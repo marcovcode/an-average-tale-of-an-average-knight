@@ -1,4 +1,1 @@
-[signal arg="disable_player_movement"]
 Witch's house.
-[signal arg="enable_player_movement"]
-[signal arg="dialogue_ended"]

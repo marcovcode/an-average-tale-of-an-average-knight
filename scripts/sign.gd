@@ -6,6 +6,7 @@ extends Area2D
 var is_talking = false
 
 func _ready() -> void:
+	Dialogic.timeline_ended.connect(_on_timeline_ended)
 	Dialogic.signal_event.connect(_on_dialogic_signal)
 
 func _process(delta):
@@ -16,3 +17,6 @@ func _process(delta):
 func _on_dialogic_signal(argument):
 	if argument == "dialogue_ended":
 		is_talking = false
+
+func _on_timeline_ended():
+	is_talking = false
