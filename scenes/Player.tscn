@@ -289,7 +289,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5xvf3"]
-size = Vector2(13, 5)
+size = Vector2(13, 7)
 
 [node name="Player" type="CharacterBody2D"]
 y_sort_enabled = true
@@ -301,7 +301,7 @@ animation = &"idle_down"
 autoplay = "idle_down"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-0.5, 4.5)
+position = Vector2(-0.5, 3.5)
 shape = SubResource("RectangleShape2D_5xvf3")
 
 [node name="RayCast2D" type="RayCast2D" parent="."]
