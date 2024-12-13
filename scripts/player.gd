@@ -15,13 +15,15 @@ func _ready() -> void:
 	Dialogic.start("player_should_go_to_witch")
 
 func _physics_process(delta):
-	var input_direction = get_input()
-	animate(input_direction)
-	change_raycast_direction(input_direction)
-	move_and_slide()
+	if can_move:
+		var input_direction = get_input()
+		animate(input_direction)
+		change_raycast_direction(input_direction)
+		move_and_slide()
 
 func _on_timeline_started():
 	can_move = false
+	animate(Vector2.ZERO)
 
 func _on_timeline_ended():
 	can_move = true
@@ -37,6 +39,16 @@ func get_input():
 
 func animate(input_direction):
 	if !can_move:
+		if last_direction == "right":
+			animated_sprite.play("idle_right")
+			animated_sprite.flip_h = false
+		elif last_direction == "left":
+			animated_sprite.play("idle_right")
+			animated_sprite.flip_h = true
+		elif last_direction == "down":
+			animated_sprite.play("idle_down")
+		elif last_direction == "up":
+			animated_sprite.play("idle_up")
 		return
 
 	is_moving = input_direction != Vector2.ZERO
